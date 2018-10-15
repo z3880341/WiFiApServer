@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+    <title>云天智能</title>
+
+</head>
+<body class="sec_body">
+<div class="center_father">
+    <h1 class="center" style="margin:0 0;font-size:x-large;padding:0;" align="center">云天智能</h1>
+</div>
+<form id="form1" method="post" action="result" onsubmit="return fun()">
+    <table align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="100" align="right">账号:&nbsp;&nbsp;</td>
+            <td width="276"><input name="username" type="text" id="username" value=""/></td>
+        </tr>
+        <tr>
+            <td width="100">&nbsp;&nbsp;</td>
+            <td width="276">&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right">密码:&nbsp;&nbsp;</td>
+            <td><input name="password" type="password" id="password" value=""/></td>
+        </tr>
+        <tr>
+            <td width="100">&nbsp;&nbsp;</td>
+            <td width="276">&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <input type="submit" name="Submit" value="send"/>
+            </td>
+        </tr>
+    </table>
+    <p align="center">请输入正确的WiFi账号和WiFi密码</p>
+</form>
+    <script>
+        function fun(){
+            var v1 = document.getElementById("username").value;
+            var v2 = document.getElementById("password").value;
+            if( v1 == ""){
+                alert("你未输入账号");
+                return false;
+            }else if(v2 == ""){
+                alert("你未输入密码")
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
